@@ -56,4 +56,26 @@
     }
   </script>
 </body>
-</html>
+</html>{
+  "short_name": "Cuadrante Automoción",
+  "name": "Cuadrante Automoción",
+  "icons": [
+    {
+      "src": "icono.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "icono.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#121212",
+  "theme-color": "#2e7d32",
+  "display": "standalone",
+  "orientation": "portrait"
+}
