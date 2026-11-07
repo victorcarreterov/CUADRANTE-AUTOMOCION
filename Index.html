@@ -14,7 +14,8 @@
   <link rel="apple-touch-icon" href="icon4-192.png">
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    html, body { width: 100%; height: 100%; overflow: hidden; background: #002855; }
+    /* Sin overflow:hidden ni iframe fijo: así el navegador permite ampliar con los dedos (pellizco). */
+    html, body { width: 100%; min-height: 100%; background: #002855; }
     #splash {
       position: fixed; inset: 0; background: #002855;
       display: flex; flex-direction: column;
@@ -31,7 +32,7 @@
       animation: spin 0.8s linear infinite; margin-top: 26px;
     }
     @keyframes spin { to { transform: rotate(360deg); } }
-    iframe { position: fixed; inset: 0; width: 100%; height: 100%; border: none; }
+    iframe { display: block; width: 100%; height: 100vh; border: none; }
   </style>
 </head>
 <body>
